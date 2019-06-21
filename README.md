@@ -57,6 +57,13 @@ training tab search bar: `prompt:Line1` and `prompt:Line2`. For example:
 - What if I told you
 - That you don't need many training examples to get NL working
 
+
+---
+Try meme generator today and make memes like
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+https://github.com/bixbydevelopers/capsule-sample-meme-generator/raw/master/assets/images/examples/i_should_make_a_bixby_capsule.jpg
+https://github.com/bixbydevelopers/capsule-sample-meme-generator/raw/master/assets/images/examples/to_build_a_bixby_capsule.jpg
 ---
 
 ## Additional Resources
