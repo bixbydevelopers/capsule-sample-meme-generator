@@ -1,0 +1,29 @@
+layout-macro-def (MemeTemplate_Summary) {
+  params {
+    param (memeTemplate) {
+      type (MemeTemplate)
+      min (Required) max (One)
+    }
+  }
+  content{
+    compound-card {
+      content {
+        image-card {
+          aspect-ratio(3:4)
+          image-object-fit (Contain)
+          image-url ("#{value(memeTemplate.blankUrl)}")
+          title-area { slot1 { text { value ("") } } }
+        }
+        title-area {
+          halign (Start)
+          slot1 {
+            text {
+              value ("#{value(memeTemplate.name)}")
+              style (Title_XS)
+            }
+          }
+        }
+      }
+    }
+  }
+}

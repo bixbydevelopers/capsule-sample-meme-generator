@@ -1,0 +1,4 @@
+text (Line1) {
+  description (The Line 1 text, which goes on the top of the meme.)
+  role-of (Line)
+}

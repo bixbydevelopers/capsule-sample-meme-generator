@@ -1,0 +1,41 @@
+layout-macro-def (Meme_Details) {
+  params {
+    param (meme) {
+      type (Meme)
+      max (One) min (Required)
+    }
+  }
+  content {
+    section {
+      content {
+        image-card {
+          aspect-ratio (1:1)
+          image-object-fit (Contain)
+          image-url {
+            template ("#{value(meme.imageResultUrl)}")
+          }
+          on-click {
+            intent {
+              goal:  punchout.Punchout
+              value: punchout.PunchoutString$expr(meme.pageResultUrl)
+            }
+          } 
+          text-position (Below)
+          title-area {
+            halign (Center)
+            slot1 {
+              single-line {
+                text {
+                  style (Detail_L_Soft)
+                  value {
+                    template ("Tap to open in browser")
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

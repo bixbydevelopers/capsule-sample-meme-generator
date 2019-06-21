@@ -1,0 +1,29 @@
+result-view {
+  match: MemeTemplate(this)
+  render {
+    if (size(this) > 1) {
+      list-of (this) {
+        where-each (memeTemplate) {
+          layout-macro (MemeTemplate_Summary) {
+            param (memeTemplate) {
+              expression (memeTemplate)
+            }
+          }
+        }
+      }
+    } else-if (size(this) == 1) {
+      layout-macro (MemeTemplate_Details) {
+        param (memeTemplate) {
+          expression (this)
+        }
+      }
+    }
+  }
+  conversation-drivers {
+    if (size(this) == 1) {
+      conversation-driver {
+        template (Make this meme)
+      }
+    }
+  }
+}

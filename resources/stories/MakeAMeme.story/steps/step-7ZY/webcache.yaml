@@ -1,0 +1,20 @@
+- request:
+    headers:
+      Accept-Charset: UTF-8
+      Accept-Encoding: gzip
+      User-Agent: Mozilla/5.0 (compatible) gzip
+      accept: application/json
+    method: GET
+    url: 'https://bixby-memegen.herokuapp.com/api/search/'
+  response:
+    headers:
+      $status: HTTP/1.1 200 OK
+      Access-Control-Allow-Origin: '*'
+      Connection: close
+      Content-Length: '11740'
+      Content-Type: application/json
+      Date: 'Thu, 23 May 2019 00:02:15 GMT'
+      Server: gunicorn/19.9.0
+      Via: 1.1 vegur
+    responseFilename: webcache/bixby-memegen.herokuapp.com-1-res.json
+    status: 200

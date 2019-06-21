@@ -1,0 +1,11 @@
+action (FindMemeTemplates) {
+  type (Search)
+  description (Search through meme templates.)
+  collect {
+    input (searchTerm) {
+      type (SearchTerm)
+      min (Optional) max (One)
+    }
+  }
+  output (MemeTemplate)
+}

@@ -1,0 +1,6 @@
+hints {
+  uncategorized {
+    utterance ("[g:MemeTemplate] Find a meme")
+    utterance ("[g:Meme] Make a meme)")
+  }
+}

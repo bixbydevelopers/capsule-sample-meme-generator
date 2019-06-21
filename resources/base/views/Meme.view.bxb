@@ -1,0 +1,15 @@
+result-view {
+  match: Meme(this) {
+    max (One) min (Required)
+  }
+  message {
+    template ("[#{value(this.line1)}. ][#{value(this.line2)}.]")
+  }
+  render {
+    layout-macro (Meme_Details) {
+      param (meme) {
+        expression (this)
+      }
+    }
+  }
+}

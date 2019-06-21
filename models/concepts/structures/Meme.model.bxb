@@ -1,0 +1,35 @@
+structure (Meme) {
+  description (The meme that the user has made.)
+  
+  property (memeTemplate) {
+    description (The meme template that was used to generate this meme.)
+    type (MemeTemplate)
+    min (Required) max (One)
+  }
+  
+  property (line1) {
+    description (Line 1 of this meme.)
+    type (Line1)
+    min (Optional) max (One)
+  }
+  
+  property (line2) {
+    description (Line 2 of this meme.)
+    type (Line2)
+    min (Optional) max (One)
+  }
+  
+  property (pageResultUrl) {
+    description (The page where you can find this meme.)
+    type (viv.core.Text)
+    min (Required) max (One)
+    visibility (Private)
+  }
+  
+  property (imageResultUrl) {
+    description (The URL that points directly to the image of this meme.)
+    type (viv.core.Text)
+    min (Required) max (One)
+    visibility (Private)
+  }
+}

@@ -1,0 +1,10 @@
+train (t-76643ynyu2eprtbyttdaakihb) {
+  utterance ("[g:Meme] make a (raptor)[v:SearchTerm] meme that says {[g:Line1] (if camera lenses are round)[v:Line]} on top and {[g:Line2] (why are pictures rectangular)[v:Line]} on the bottom")
+  plan (Y+BkkEqtSMwtyEnVy03NTXVPzUstSizJL9LzBfIYlLDLQVmpYDXS2NX4ZOalGuIyHCSJT6MRXo1KuF0ckgqUALqMQR27GrfMvBRkdcUMCtgVBqcmFiVnhKQW5TJwMDAyMDEwM7AwsDKwMbAD+QxgEUagCCNYhBEowgLFIDYDUJQBqA6miwkIWQA=)
+  last-modified (1558567285235)
+}
+train (t-7hk9tycvj32lp2qrjpzafv8p9) {
+  utterance ([g:Meme] Make a meme)
+  plan (Y2BkkEqtSMwtyEnVy03NTXVPzUstSizJL9LzBfIYQIARRAAA)
+  last-modified (1558568580604)
+}

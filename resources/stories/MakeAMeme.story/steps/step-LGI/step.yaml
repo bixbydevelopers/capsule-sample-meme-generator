@@ -1,0 +1,8 @@
+data:
+  sixtree: |-
+    intent {
+      goal {
+        $ref(r-7ZY-b)
+      }
+    }
+type: intent

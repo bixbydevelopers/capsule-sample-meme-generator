@@ -1,0 +1,13 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (FindMemeTemplates) {
+      accepted-inputs (searchTerm)
+      local-endpoint (FindMemeTemplates.js)
+    }
+
+    action-endpoint (GenerateMeme) {
+      accepted-inputs (memeTemplate, line1, line2)
+      local-endpoint (GenerateMeme.js)
+    }
+  }
+}

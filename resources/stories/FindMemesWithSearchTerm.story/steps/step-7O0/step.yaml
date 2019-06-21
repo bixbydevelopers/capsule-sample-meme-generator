@@ -1,0 +1,3 @@
+data:
+  aligned: '[g:MemeTemplate] find memes about (cats)[v:SearchTerm]'
+type: intent

@@ -1,0 +1,10 @@
+train (t-2skp8puzgfgjgl728no8aw690) {
+  utterance ([g:Meme:continue:MemeTemplate] Make this meme)
+  plan (Y2BkkEqtSMwtyEnVy03NTXVPzUstSizJL9LzBfIYQIARRAAA)
+  last-modified (1558569221682)
+}
+train (t-2wibdu41zskownnvvdw3j9gu7) {
+  utterance ("[g:Meme] make a meme about (boats)[v:SearchTerm]")
+  plan (Y2BnkEqtSMwtyEnVy03NTXVPzUstSizJL9LzBfIYlLDLQVmpYDXS2NX4ZOalGuKTNMJlOsjUkFSgBNAGBnXsatwy81KQ1RUzKGBXGJyaWJScEZJalMvAxsDIwMTAzMDCwApkMwB5IAjiMTJAAIRmAmKgPAA=)
+  last-modified (1558558444144)
+}

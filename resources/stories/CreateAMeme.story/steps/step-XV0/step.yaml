@@ -1,0 +1,9 @@
+data:
+  sixtree: |-
+    intent {
+      goal { Line }
+      value-set {
+        Line { Line(I have no idea) }
+      }
+    }
+type: intent

@@ -1,0 +1,48 @@
+layout-macro-def (MemeTemplate_Details) {
+  params {
+    param (memeTemplate) {
+      type (MemeTemplate)
+      min (Required) max (One)
+    }
+  }
+  content {
+    section {
+      content {
+        title-area {
+          halign (Start)
+          slot1 {
+            text {
+              style (Title_M)
+              value {
+                template ("#{value(memeTemplate.name)}")
+              }
+            }
+          }
+        }
+        image-card {
+          image-url("#{value(memeTemplate.exampleUrl)}")
+          aspect-ratio (1:1)
+          image-object-fit (Contain)
+          text-position (Below)
+          title-area {
+            halign (Center)
+            slot1 {
+              text {
+                style (Detail_L_Soft)
+                value {
+                  template ("Tap to learn more about this meme")
+                }
+              }
+            }
+          }
+          on-click {
+            intent {
+              goal:  punchout.Punchout
+              value: punchout.PunchoutString$expr(memeTemplate.descriptionUrl)
+            }
+          } 
+        }
+      }
+    }
+  }
+}

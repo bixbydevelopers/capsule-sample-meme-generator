@@ -1,0 +1,7 @@
+capsule-info {
+  display-name (Example Meme Generator)
+  developer-name (Bixby)
+  icon-asset (/images/icons/philosoraptor.jpg)
+  description ("Make memes with your voice!")
+  website-url (https://bixby-memegen.herokuapp.com/)
+}

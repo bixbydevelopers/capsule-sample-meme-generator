@@ -1,0 +1,65 @@
+structure (MemeTemplate) {
+  description (A meme template.)
+  
+  property (name) {
+    description (The name of the meme.)
+    type (viv.core.Text)
+    min (Required) max (One)
+    visibility (Private)
+  }
+  
+  property (descriptionUrl) {
+    description (A link to a resource which describes the meme.)
+    type (viv.core.Text)
+    min (Required) max (One)
+    visibility (Private)
+  }
+  
+  property (keywords) {
+    description (Keywords for the meme, which can be useful for a search.)
+    type (viv.core.Text)
+    min (Optional) max (Many)
+    visibility (Private)
+  }
+  
+  property (blankUrl) {
+    description (The URL to the blank version of the meme with no text.)
+    type (viv.core.Text)
+    min (Required) max (One)
+    visibility (Private)
+  }
+  
+  property (exampleUrl) {
+    description (The URL to an example of this meme to show its usage.)
+    type (viv.core.Text)
+    min (Required) max (One)
+    visibility (Private)
+  }
+}
+
+// Example
+// GET /api/search/
+// [
+//     {
+//         "count": -1,
+//         "template": {
+//             "name": "Socially Awkward Penguin",
+//             "description": "http://knowyourmeme.com/memes/socially-awkward-penguin",
+//             "keywords": [
+//                 "awkward",
+//                 "awkward-penguin",
+//                 "forget",
+//                 "joke",
+//                 "penguin",
+//                 "penguin-awkward",
+//                 "punchline",
+//                 "socially",
+//                 "start",
+//                 "telling"
+//             ],
+//             "blank": "https://bixby-memegen.herokuapp.com/awkward/_.jpg",
+//             "example": "https://bixby-memegen.herokuapp.com/awkward/start_telling_joke/forget_punchline.jpg"
+//         }
+//     }
+// ... Other memes ...
+// 

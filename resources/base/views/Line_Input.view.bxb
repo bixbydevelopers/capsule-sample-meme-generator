@@ -1,0 +1,21 @@
+input-view {
+  match: Line
+  render {
+    form {
+      elements {
+        text-input {
+          id (line)
+          label (Line)
+          required (true)
+          type (Line)
+        }
+      }
+      on-submit {
+        goal: Line
+        value-set {
+          Line: viv.core.FormElement(line)
+        }
+      }
+    }
+  }
+}

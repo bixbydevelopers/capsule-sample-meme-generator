@@ -1,0 +1,7 @@
+data:
+  sixtree: |-
+    intent {
+      goal { viv.punchoutToApp.Punchout }
+      value { viv.punchoutToApp.PunchoutString (https://bixby-memegen.herokuapp.com/ll/hehehehe/_.jpg?share=true) }
+    }
+type: intent

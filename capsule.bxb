@@ -1,0 +1,16 @@
+capsule {
+  id (example.memeGenerator)
+  version (0.1.0)
+  format (3)
+  targets {
+    target (bixby-mobile-en-US)
+  }
+  capsule-imports {
+    import (viv.punchoutToApp) { as (punchout) version(1.0.7)}
+  }
+  runtime-flags {
+    support-halt-effect-in-computed-inputs
+    concepts-inherit-super-type-features
+    modern-prompt-rejection
+  }
+}

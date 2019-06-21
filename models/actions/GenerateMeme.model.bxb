@@ -1,0 +1,24 @@
+action (GenerateMeme) {
+  type (Search)
+  description (Action which will make the user's meme.)
+  collect {
+    input (memeTemplate) {
+      type (MemeTemplate)
+      min (Required) max (One)
+      default-init {
+        intent {
+          goal: FindMemeTemplates
+        }
+      }
+    }
+    input (line1) {
+      type (Line1)
+      min (Required) max (One)
+    }
+    input (line2) {
+      type (Line2)
+      min (Required) max (One)
+    }
+  }
+  output (Meme)
+}
