@@ -9,7 +9,6 @@
 Meme Generator is a fun capsule that allows you to make memes! You can find meme templates, generate your own memes, and finally open the meme in your browser for easy sharing. Try meme generator today and make memes like this:
 
 <img src="https://github.com/bixbydevelopers/capsule-sample-meme-generator/raw/master/assets/images/examples/meme_examples_graphic.jpg">
----
 
 ---
 
