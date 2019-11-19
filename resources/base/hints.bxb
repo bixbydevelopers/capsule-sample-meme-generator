@@ -1,6 +1,7 @@
 hints {
   uncategorized {
-    utterance ("[g:MemeTemplate] Find a meme")
-    utterance ("[g:Meme] Make a meme)")
+    hint ("With Meme Generator find a meme")
+    hint ("Make a meme with Meme Generator")
+    hint ("Find a meme using Meme Generator")
   }
 }

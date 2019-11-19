@@ -4,4 +4,8 @@ capsule-info {
   icon-asset (/images/icons/philosoraptor.jpg)
   description ("Make memes with your voice!")
   website-url (https://bixby-memegen.herokuapp.com/)
+  dispatch-name (Meme Generator)
+  search-keywords {
+    keyword (meme)
+  }
 }
