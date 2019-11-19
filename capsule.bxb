@@ -1,16 +1,22 @@
 capsule {
-  id (example.memeGenerator)
-  version (0.1.0)
-  format (3)
-  targets {
-    target (bixby-mobile-en-US)
+	id (example.memeGenerator)
+	version (0.1.0)
+	format (3)
+	targets {
+		target (bixby-mobile-en-US)
+	}
+	capsule-imports {
+		import (viv.punchoutToApp) { as (punchout) version(1.0.14)}
+	}
+  store-sections {
+    section (GamesAndFun)
   }
-  capsule-imports {
-    import (viv.punchoutToApp) { as (punchout) version(1.0.7)}
-  }
-  runtime-flags {
-    support-halt-effect-in-computed-inputs
-    concepts-inherit-super-type-features
-    modern-prompt-rejection
-  }
+	runtime-flags {
+		support-halt-effect-in-computed-inputs
+		concepts-inherit-super-type-features
+		modern-prompt-rejection
+		no-filtering-with-validation
+		modern-default-view-behavior
+		use-input-views-for-selection-list-detail
+	}
 }
