@@ -2,7 +2,6 @@ input-view {
   match: MemeTemplate(this)
   render {
     selection-of (this) {
-      has-details (false)
       where-each (memeTemplate) {
         layout-macro (MemeTemplate_Summary) {
           param (memeTemplate) {
