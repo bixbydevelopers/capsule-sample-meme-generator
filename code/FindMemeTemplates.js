@@ -26,9 +26,10 @@ module.exports.function = function findMemeTemplates (searchTerm) {
   });
 
   if (searchTerm) {
+    searchTerm = searchTerm.toString().toLowerCase()
     memeTemplates = memeTemplates.filter(meme => {
-      let inKeywords = meme.keywords.filter(keyword => keyword.includes(searchTerm));
-      let inName = meme.name.includes(searchTerm);
+      let inKeywords = meme.keywords.filter(keyword => keyword.includes(searchTerm)).length > 0;
+      let inName = meme.name.toLowerCase().includes(searchTerm);
       return inKeywords || inName;
     });
   }
