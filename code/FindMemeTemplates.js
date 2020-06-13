@@ -1,5 +1,4 @@
 var http = require('http');
-var textLib = require('textLib');
 
 const baseURL = 'https://bixby-memegen.herokuapp.com';
 
@@ -28,8 +27,8 @@ module.exports.function = function findMemeTemplates (searchTerm) {
 
   if (searchTerm) {
     memeTemplates = memeTemplates.filter(meme => {
-      let inKeywords = meme.keywords.filter(keyword => textLib.fuzzyMatch(keyword, searchTerm)).length > 0;
-      let inName = textLib.fuzzyMatch(meme.name, searchTerm);
+      let inKeywords = meme.keywords.filter(keyword => keyword.includes(searchTerm));
+      let inName = meme.name.includes(searchTerm);
       return inKeywords || inName;
     });
   }
