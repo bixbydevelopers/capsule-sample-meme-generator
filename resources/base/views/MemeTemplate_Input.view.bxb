@@ -3,7 +3,7 @@ input-view {
   render {
     selection-of (this) {
       where-each (memeTemplate) {
-        layout-macro (MemeTemplate_Summary) {
+        macro (MemeTemplate_Summary) {
           param (memeTemplate) {
             expression (memeTemplate)
           }
