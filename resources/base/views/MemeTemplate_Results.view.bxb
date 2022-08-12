@@ -12,9 +12,11 @@ result-view {
         }
       }
     } else-if (size(this) == 1) {
-      layout-macro (MemeTemplate_Details) {
-        param (memeTemplate) {
-          expression (this)
+      layout {
+        macro (MemeTemplate_Details) {
+          param (memeTemplate) {
+            expression (this)
+          }
         }
       }
     }
