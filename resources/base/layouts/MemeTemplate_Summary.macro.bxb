@@ -1,4 +1,4 @@
-layout-macro-def (MemeTemplate_Summary) {
+macro-def (MemeTemplate_Summary) {
   params {
     param (memeTemplate) {
       type (MemeTemplate)

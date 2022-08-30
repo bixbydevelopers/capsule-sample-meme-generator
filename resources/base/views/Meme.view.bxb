@@ -6,9 +6,11 @@ result-view {
     template ("[#{value(this.line1)}. ][#{value(this.line2)}.]")
   }
   render {
-    layout-macro (Meme_Details) {
-      param (meme) {
-        expression (this)
+    layout {
+      macro (Meme_Details) {
+        param (meme) {
+          expression (this)
+        }
       }
     }
   }
